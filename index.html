@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Header-->
+  <div style="font-size: 29pt; margin: 15px; font-family: 'Times New Roman', Times, serif;"><b>LOGO</b></div>
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a class="nav-item nav-link" data-toggle="modal" data-target="#aboutUs" href="#"><span style="color: grey;">Logo</span></a>
+
+      <a href="#" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="navbar-toggler-icon"></i></a>
+      <div class="navbar-collapse collapse" id="navbar-menu">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#home"><span style="color: gray">Home <i class="fa-solid fa-house"></i></span></a>
+
+          <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="MenuOneDropdown" href="#menuone"><span style="color: gray">Menu 1</span></a>
+              <div class="dropdown-menu" aria-labelledby="MenuOneDropdown">
+                <h5 class="dropdown-header">Repository <i class="fa-solid fa-folder-plus"></i></h5>
+                <a href="#" class="dropdown-item small">Repo #1</a>
+                <a href="#" class="dropdown-item small">Repo #2</a>
+                <a href="#" class="dropdown-item small">Repo #3</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="MenuTwoDropdown" href="#menutwo"><span style="color: gray;">Menu 2</span></a>
+              <div class="dropdown-menu" aria-labelledby="MenuTwoDropdown">
+                <h5 class="dropdown-header">Project Reports <i class="fa-solid fa-folder-plus"></i></h5>
+                <a href="#" class="dropdown-item small">Project Report #1</a>
+                <a href="#" class="dropdown-item small">Project Report #2</a>
+                <a href="#" class="dropdown-item small">Project Report #3</a>
+            </div>
+          </div>
+
+          <a class="nav-item nav-link" href="#menuthree"><span style="color: gray">Menu 3</span></a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!--About Us Modal (hidden)-->
+  <div class="modal fade" id="aboutUs" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">About Us</div>
+        </div>
+        <div class="modal-body text-center">
+          <p>
+            <span><i class="fa-solid fa-phone"></i> Phone +91-7892389134</span>
+            <br>
+            <span><i class="fa-brands fa-whatsapp"></i> Whatsapp +91-3572781290</span>
+            <br>
+            <a href="#linkedInLink"><i class="fa-brands fa-linkedin"></i> LinkedIn </a>
+            <br>
+            <a href="#facebookLink"><i class="fa-brands fa-facebook"></i> Facebook </a>
+            <br>
+            <a href="#instagramLink"><i class="fa-brands fa-instagram"></i> Instagram </a>
+            <br>
+            <a href="#twitterLink"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <br>
+            <a href="#help" class="text-warning">Have any questions? Contact Us!</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Slider-->
+  <div class="carousel" id="mainSlide">
+    <div class="carousel-inner">
+      <img style="width: 1700px; height:900px;" src="./images/background-2.jpg" alt="Main Background">
+    </div>
+  </div>
+
+  <!--Content Container-->
+  <div class="container-fluid p-5">
+    <h1>Content</h1>
+  </div>
+
+  <!--Footer-->
+  <footer class="container-fluid bg-dark p-5">
+    <div class="row">
+      <div class="col-4">
+        <h6 class="text-white">Email <i class="fa fa-envelope" aria-hidden="true"></i></h6>
+        <a href="#email">info@gmail.com</a>
+      </div>
+
+      <div class="col-4">
+        <h6 class="text-white">Phone <i class="fa-solid fa-phone"></i></h6>
+        <p class="text-info">
+          +91-7892389134/+91-3572781290
+        </p>
+      </div>
+      <div class="col-4">
+        <h6 class="text-white">Others</i></h6>
+        <a href="#facebooklink"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#instalink"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#twitterlink"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <br>
+    <h6 class="text-white" align="center">Logo @ 2022</h6>
+  </footer>
+</body>
+</html>
